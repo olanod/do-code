@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>do-code example</title>
+    <script type="module">
+      import './code.js'
+    </script>
+  </head>
+  <body>
+    <do-code lang="js">import message from 'inspiring-message.js'
+
+/**
+ * Some complex function
+ */
+const say = msg => console.log(msg)
+
+// true or false?
+if (1 + '1' == 11 || false == "0") {
+  say(message)
+}
+
+class Foo extends Bar {
+  constructor(...args) {
+    super()
+    this._foo = 1.23
+  }
+
+  get foo() { return this._foo }
+}</do-code>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+:host {
+    --code-bg: #1E1E1E;
+    --code-fg: #BFBFBF;
+    --code-comment: #767676;
+    --code-string: #6CAC4C;
+    --code-keyword: #6CACCC;
+    --code-value: #ACAC6C;
+    --code-special: #AC6C4C;
+
+    background-color: var(--code-bg);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--code-fg);
+    display: block;
+    padding: 0.8rem;
+}
+#code {
+    margin: 0;
+}
+
+.comment { color: var(--code-comment) }
+.string { color: var(--code-string) }
+.keyword { color: var(--code-keyword) }
+.value { color: var(--code-value) }
+.keyword.value { color: var(--code-special) }
+.variable { color: var(--code-special) }
+.this { color: var(--code-special) }
